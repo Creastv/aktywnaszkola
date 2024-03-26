@@ -1,0 +1,30 @@
+.btn-main {
+  padding: 10px 20px;
+  background-color: $main3;
+  border: 2px solid $main3 !important;
+  color: #fff;
+  border: none;
+  border-radius: 0px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  &:hover {
+    background: none;
+    color: $main3;
+  }
+}
+
+.btn-rev {
+  padding: 10px 20px;
+  border: 2px solid $main3 !important;
+  color: $main3;
+  border: none;
+  border-radius: 0px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  &:hover {
+    background-color: $main3;
+    color: #fff;
+  }
+}

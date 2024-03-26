@@ -1,0 +1,156 @@
+#footer {
+  background-color: #dff5ff;
+}
+.f-ornament {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.f-main {
+  padding: 20px 0;
+  margin-bottom: 30px;
+  .f-main__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+
+    .col {
+      width: calc(50% - 20px);
+      @media #{$sm} {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Widget :only-of-type
+.f_company {
+  display: flex;
+  gap: 30px;
+  @media #{$sm} {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .logo {
+  }
+  .desc {
+    p {
+      font-size: 14px;
+    }
+    .con {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      justify-content: space-between;
+      margin-top: 10px;
+      @media #{$sm} {
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+      .con__left {
+        margin-bottom: 10px;
+        a {
+          display: block;
+          text-decoration: none;
+          margin-bottom: 10px;
+        }
+      }
+      .con__right {
+      }
+    }
+  }
+}
+
+.f_event {
+  text-align: center;
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+
+    img {
+      align-self: center;
+      display: block;
+      width: auto;
+      height: 60px;
+      @media #{$sm} {
+        height: 40px;
+      }
+    }
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+.f-info__ornament {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.f-info {
+  margin-top: -1px;
+  background-color: $main;
+  .f-info__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    @media #{$sm} {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .left {
+      @media #{$sm} {
+        width: 100%;
+        order: 2;
+        text-align: center;
+      }
+    }
+    .right {
+      @media #{$sm} {
+        text-align: center;
+        width: 100%;
+        order: 1;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        @media #{$sm} {
+          justify-content: center;
+        }
+        li {
+          a {
+            svg {
+              path {
+                fill: #fff;
+              }
+            }
+            &:hover {
+              svg {
+                path {
+                  fill: $main3;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    * {
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    p {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+  }
+}

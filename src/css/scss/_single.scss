@@ -1,0 +1,134 @@
+.meta {
+  margin-bottom: 20px;
+}
+.entry-date {
+  display: block;
+  font-size: 0.8em;
+  margin-bottom: 20px;
+  margin-bottom: 30px;
+  color: $black;
+}
+body.single {
+  .entry-header {
+    width: 100%;
+    margin: 0 auto;
+    @media #{$sm} {
+      padding: 30px 0;
+    }
+    &:before {
+      display: none !important;
+    }
+    h1 {
+      color: $black !important;
+      font-size: 2.4em;
+      @media #{$sm} {
+        font-size: 28px;
+      }
+    }
+    .rank-math-breadcrumb {
+      // padding: 0 20px;
+
+      p {
+        text-align: center !important;
+        justify-content: center !important;
+      }
+      a {
+        color: $main2;
+      }
+      span {
+        color: black !important;
+      }
+    }
+    .meta-pub {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      font-size: 0.8em;
+      margin: 0;
+      span {
+        color: var(--black);
+      }
+    }
+    img {
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .entry-content {
+    max-width: 760px;
+    width: 100%;
+    margin: 0 auto;
+    // text-align: justify;
+    // margin-bottom: 50px;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    a {
+      color: $main;
+    }
+  }
+}
+
+// bio
+#author-bio {
+  padding: 20px 20px;
+  border-top: 1px solid $main2;
+  border-bottom: 1px solid $main2;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 50px;
+  @media #{$sm} {
+    flex-wrap: wrap;
+  }
+
+  #author-avatar {
+    img {
+      // border-radius: 100%;
+    }
+  }
+  #author-details {
+    .author-head {
+      p.h3 {
+        font-size: 21px;
+        margin-bottom: 10px;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+    .author-footer {
+      font-size: 13px;
+    }
+  }
+}
+
+.kk-ata {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid $main2;
+  border-bottom: 1px solid $main2;
+  text-align: center;
+
+  margin-bottom: 30px;
+
+  .kk-ata__wraper {
+    span {
+      display: block;
+      font-size: 12px;
+      margin-bottom: 10px;
+      color: var(--black);
+    }
+  }
+  .kksr-muted,
+  .kksr-legend {
+    font-size: 12px;
+  }
+}
