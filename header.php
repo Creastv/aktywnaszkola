@@ -22,7 +22,8 @@
                 <?php get_template_part('templates-parts/header/header', 'brand'); ?>
                 <?php get_template_part('templates-parts/header/header', 'nav'); ?>
                 <?php get_template_part('templates-parts/header/header', 'burger'); ?>
-                <?php get_template_part('templates-parts/header/header', 'cta'); ?>
+                <?php // get_template_part('templates-parts/header/header', 'cta'); 
+                ?>
             </div>
             <?php // if (!is_singular('post')) : 
             ?>
