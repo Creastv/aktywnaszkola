@@ -69,8 +69,8 @@ h6,
 }
 
 .tag-special {
-  font-family: "Sorts Mill Goudy", serif;
-  font-weight: 400;
+  font-family: "futura-pt-condensed", sans-serif;
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -197,6 +197,14 @@ body {
   margin: 0 auto;
   width: 100%;
   position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .container-full {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 #main {

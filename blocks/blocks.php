@@ -77,24 +77,7 @@ function register_acf_block_types()
       wp_enqueue_script('go-faq-init', get_template_directory_uri() . '/blocks/faq/faq.js', array('jquery'), '4', true);
     },
   ));
-  acf_register_block_type(array(
-    'name'              => 'wc-futured',
-    'title'             => __('Wyróznione produkty'),
-    'render_template'   => 'blocks/wc-futured/wc-futured.php',
-    'category'          => 'formatting',
-    'icon' => array(
-      'background' => '#122b4f',
-      'foreground' => '#fff',
-      'src' => 'ellipsis',
-    ),
-    'mode'            => 'preview',
-    'keywords'          => array('Wyróznione produkty'),
-    'supports' => array('align' => false),
-    'enqueue_assets'    => function () {
-      wp_enqueue_style('go-wc-futured',  get_template_directory_uri() . '/blocks/wc-futured/wc-futured.min.css');
-      wp_enqueue_script('go-wc-futured-init', get_template_directory_uri() . '/blocks/wc-futured/wc-futured.js', array('jquery'), '4', true);
-    },
-  ));
+
   acf_register_block_type(array(
     'name'              => 'title',
     'title'             => __('Title'),
@@ -107,7 +90,7 @@ function register_acf_block_types()
     ),
     'mode'            => 'preview',
     'keywords'          => array('Title'),
-    'supports' => array('align' => false),
+    'supports' => array('align' => true),
     'enqueue_assets'    => function () {
       wp_enqueue_style('go-title',  get_template_directory_uri() . '/blocks/title/title.min.css');
     },

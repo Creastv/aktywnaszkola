@@ -1,16 +1,24 @@
 <?php
 $title = get_field('tytul');
-$link = get_field('link');
-if ($link) :
-    $link_url = $link['url'];
-    $link_title = $link['title'];
-    $link_target = $link['target'] ? $link['target'] : '_self';
-endif;
+$titleBorder = get_field('tytul_podkreslenie');
+$titleCon = get_field('kontynuuj_tytul');
+$bigTitle = get_field('duzy_tytul');
+$tag = get_field('tag');
+
+$class_name = ' bc-title';
+if (!empty($block['className'])) {
+    $class_name .= ' ' . $block['className'];
+}
+if (!empty($block['align'])) {
+    $class_name .= ' align' . $block['align'];
+}
 ?>
 
-<div class="bc-title">
+<div class="<?php echo esc_attr($class_name); ?>">
     <div class="bc-title__wrap">
-        <h1 class="bc-title__title"><?php echo $title; ?></h1>
-        <a class="btn-revers" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+        <<?php echo $tag; ?> class="bc-title__title">
+            <?php echo $title; ?><span class="bc-title-border"><span> <?php echo $titleBorder; ?></span></span>
+            <?php echo $titleCon; ?></<?php echo $tag; ?>>
     </div>
+    <span class="bc-title-big"><?php echo $bigTitle; ?></span>
 </div>
