@@ -967,7 +967,8 @@ label > span {
   display: block;
 }
 
-input {
+input,
+select {
   width: 100%;
   padding: 10px;
   border-radius: 0px;
@@ -996,11 +997,54 @@ textarea {
   margin-top: 10px;
 }
 
+.wpcf7-acceptance label {
+  font-size: 12px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.wpcf7-acceptance label input {
+  width: 20px;
+}
+
+.wpcf7-spinner {
+  position: absolute;
+}
+
 .wpcf7-not-valid-tip {
   color: #dc3232;
   font-size: 12px;
   font-weight: normal;
   display: block;
+}
+
+.row-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row-form .col-1 {
+  width: 100%;
+  padding: 0 10px;
+}
+@media only screen and (max-width: 768px) {
+  .row-form .col-1 {
+    width: 100%;
+  }
+}
+.row-form .col-2 {
+  width: 50%;
+  padding: 0 10px;
+}
+@media only screen and (max-width: 768px) {
+  .row-form .col-2 {
+    width: 100%;
+  }
+}
+.row-form .col-btn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10px;
 }
 
 .posts-wraper {
