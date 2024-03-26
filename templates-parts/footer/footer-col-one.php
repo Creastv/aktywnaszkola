@@ -19,9 +19,8 @@
                     <a href="tel:#"><b>T:</b> 686 426 678</a>
                 </div>
                 <div class="con__right">
-                    <a href="#" class="btn-rev">Napisz do nas</a>
+                    <a href="/kontakt/" class="btn-rev">Napisz do nas</a>
                 </div>
-
             </div>
         </div>
     </div>
