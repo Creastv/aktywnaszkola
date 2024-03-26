@@ -457,6 +457,36 @@ body {
   opacity: 0.8;
 }
 
+.page-id-8 #Forma_1 {
+  fill: #f7931d;
+}
+.page-id-8 #Forma_10 {
+  fill: #f7931d;
+}
+.page-id-8 h1.entry-title {
+  color: #f7931d !important;
+}
+
+.page-id-10 #Forma_1 {
+  fill: #36a9e1;
+}
+.page-id-10 #Forma_10 {
+  fill: #a5e2ff;
+}
+.page-id-10 h1.entry-title {
+  color: #36a9e1 !important;
+}
+
+.page-id-6 #Forma_1 {
+  fill: #8bbc4f;
+}
+.page-id-6 #Forma_10 {
+  fill: #c0e88e;
+}
+.page-id-6 h1.entry-title {
+  color: #8bbc4f !important;
+}
+
 #header {
   padding: 0px 0px;
   background-color: #185ab1;
@@ -594,25 +624,25 @@ body {
   color: #fff;
 }
 #header .navbar__navigation #programy-nav-list .ao-color a {
-  color: #36a9e1;
+  color: #f7931d;
 }
 #header .navbar__navigation #programy-nav-list .ao-color a:hover {
-  background-color: #36a9e1;
+  background-color: #f7931d;
   color: #fff;
 }
 #header .navbar__navigation #programy-nav-list .current_page_item.ao-color a {
-  background-color: #36a9e1;
+  background-color: #f7931d;
   color: #fff;
 }
 #header .navbar__navigation #programy-nav-list .adk-color a {
-  color: #f7931d;
+  color: #36a9e1;
 }
 #header .navbar__navigation #programy-nav-list .adk-color a:hover {
-  background-color: #f7931d;
+  background-color: #36a9e1;
   color: #fff;
 }
 #header .navbar__navigation #programy-nav-list .current_page_item.adk-color a {
-  background-color: #f7931d;
+  background-color: #36a9e1;
   color: #fff;
 }
 #header .navbar__navigation.active {

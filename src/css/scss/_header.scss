@@ -1,3 +1,45 @@
+.page-id-8 {
+  #Forma_1 {
+    fill: $main3;
+  }
+  // #Forma_2 {
+  //   fill: #ffcd93;
+  // }
+  #Forma_10 {
+    fill: $main3;
+  }
+  h1.entry-title {
+    color: $main3 !important;
+  }
+}
+.page-id-10 {
+  #Forma_1 {
+    fill: $main2;
+  }
+  // #Forma_2 {
+  //   fill: #a5e2ff;
+  // }
+  #Forma_10 {
+    fill: #a5e2ff;
+  }
+  h1.entry-title {
+    color: $main2 !important;
+  }
+}
+.page-id-6 {
+  #Forma_1 {
+    fill: $main1;
+  }
+  // #Forma_2 {
+  //   fill: #c0e88e;
+  // }
+  #Forma_10 {
+    fill: #c0e88e;
+  }
+  h1.entry-title {
+    color: $main1 !important;
+  }
+}
 #header {
   padding: 0px 0px;
   background-color: $main;
@@ -136,21 +178,6 @@
       }
       .ao-color {
         a {
-          color: $main2;
-          &:hover {
-            background-color: $main2;
-            color: #fff;
-          }
-        }
-      }
-      .current_page_item.ao-color {
-        a {
-          background-color: $main2;
-          color: #fff;
-        }
-      }
-      .adk-color {
-        a {
           color: $main3;
           &:hover {
             background-color: $main3;
@@ -158,9 +185,24 @@
           }
         }
       }
-      .current_page_item.adk-color {
+      .current_page_item.ao-color {
         a {
           background-color: $main3;
+          color: #fff;
+        }
+      }
+      .adk-color {
+        a {
+          color: $main2;
+          &:hover {
+            background-color: $main2;
+            color: #fff;
+          }
+        }
+      }
+      .current_page_item.adk-color {
+        a {
+          background-color: $main2;
           color: #fff;
         }
       }
