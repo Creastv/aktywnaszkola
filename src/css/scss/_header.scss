@@ -5,6 +5,11 @@
   background-size: cover;
   background-position: bottom;
   margin-bottom: 50px;
+  .container-full {
+    @media #{$md} {
+      padding: 0px 0px;
+    }
+  }
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -17,8 +22,8 @@
     display: flex;
     flex-flow: column;
     align-self: center;
-    // align-items: center;
-    align-items: flex-end;
+    align-items: center;
+    // align-items: flex-end;
     @media #{$lg} {
       order: 3;
       align-items: flex-end;
@@ -99,7 +104,7 @@
           text-align: center;
 
           @media #{$xlg} {
-            font-size: 16px;
+            font-size: 16px !important;
           }
           @media #{$lg} {
             font-size: 21px;
@@ -173,17 +178,21 @@
   }
   @media #{$lg} {
     order: 2;
-    // margin-top: -50px;
+    margin-top: -50px;
   }
   @media #{$sm} {
     width: 60%;
     margin-top: 0px;
-    padding: 20px 0;
+    padding: 20px;
   }
   img {
     display: block;
     max-width: 100%;
     height: auto;
+    @media #{$sm} {
+      max-width: 250px;
+      width: 100%;
+    }
   }
 }
 .navbar__cta {
@@ -191,6 +200,7 @@
   flex-wrap: wrap;
   flex-flow: column;
   align-items: end;
+  justify-content: center;
   gap: 15px;
   @media #{$lg} {
     order: 1;
