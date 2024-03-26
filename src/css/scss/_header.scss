@@ -16,7 +16,8 @@
     display: flex;
     flex-flow: column;
     align-self: center;
-    align-items: center;
+    // align-items: center;
+    align-items: flex-end;
     @media #{$lg} {
       order: 3;
       align-items: flex-end;

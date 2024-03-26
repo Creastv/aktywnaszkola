@@ -11,9 +11,8 @@
             </svg>
         </div>
         <div class="desc">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
-                lacus vel facilisis. </p>
+            <p>Największy w historii Ministerstwa Sportu i Turystyki Program skierowany do dzieci, młodzież oraz
+                dorosłych! </p>
             <div class="con">
                 <div class="con__left">
                     <a href="mailto:kontact@aktywnaszkola.pl"><b>M:</b> kontact@aktywnaszkola.pl</a>
