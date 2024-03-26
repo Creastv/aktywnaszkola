@@ -994,4 +994,26 @@ html :where(.wp-block)[data-align=right] {
 .bg-home-posts:after,
 .bg-centrum-lokalizacja:after {
   display: none;
+}
+
+.acf-block-preview .bl-conatainer {
+  border: 1px solid #eeeef0;
+  width: 100% !important;
+  left: 0 !important;
+  margin-left: 0px !important;
+}
+.acf-block-preview .bl-conatainer .container {
+  padding: 0 !important;
+}
+.acf-block-preview .bl-conatainer:before {
+  content: "Kontener";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #185ab1;
+  background-color: #185ab1;
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #fff;
 }/*# sourceMappingURL=go-admin.css.map */
