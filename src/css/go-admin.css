@@ -630,6 +630,7 @@ body {
   .navbar__brand {
     width: 60%;
     margin-top: 0px;
+    padding: 20px 0;
   }
 }
 .navbar__brand img {
