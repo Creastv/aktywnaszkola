@@ -454,6 +454,7 @@ body {
   background-image: url("../img/bg-header.png");
   background-size: cover;
   background-position: bottom;
+  margin-bottom: 50px;
 }
 #header .navbar {
   display: flex;
@@ -955,6 +956,51 @@ body.single .entry-content a {
 .btn-rev:hover {
   background-color: #f7931d;
   color: #fff;
+}
+
+label {
+  width: 100%;
+  margin-bottom: 10px;
+  display: block;
+}
+label > span {
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 0px;
+  border: 1px solid #36a9e1;
+  margin: 5px 0;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 0px;
+  border: 1px solid #36a9e1;
+  margin: 5px 0;
+}
+
+.wpcf7-submit {
+  background-color: #36a9e1;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+  margin-top: 10px;
+}
+
+.wpcf7-not-valid-tip {
+  color: #dc3232;
+  font-size: 12px;
+  font-weight: normal;
+  display: block;
 }
 
 .posts-wraper {

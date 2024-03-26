@@ -1,0 +1,41 @@
+label {
+  width: 100%;
+  margin-bottom: 10px;
+  display: block;
+  > span {
+    display: block;
+  }
+}
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 0px;
+  border: 1px solid $main2;
+  margin: 5px 0;
+}
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 0px;
+  border: 1px solid $main2;
+  margin: 5px 0;
+}
+.wpcf7-submit {
+  background-color: $main2;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+  margin-top: 10px;
+}
+
+.wpcf7-not-valid-tip {
+  color: #dc3232;
+  font-size: 12px;
+  font-weight: normal;
+  display: block;
+}

@@ -454,6 +454,7 @@ body {
   background-image: url("../img/bg-header.png");
   background-size: cover;
   background-position: bottom;
+  margin-bottom: 50px;
 }
 #header .navbar {
   display: flex;
