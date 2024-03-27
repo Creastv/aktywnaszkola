@@ -12,6 +12,8 @@ elseif ($program == 2) :
     $faqs = get_field('faq_ao', 'options');
 elseif ($program == 3) :
     $faqs = get_field('faq_adp', 'options');
+elseif ($program == 4) :
+    $faqs = get_field('faq_str_glowna', 'options');
 endif;
 
 
