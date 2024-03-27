@@ -14,41 +14,52 @@ elseif ($program == 3) :
     $faqs = get_field('faq_adp', 'options');
 endif;
 
-$num = '1';
+
+$chunks = array_chunk($faqs, ceil(count($faqs) / 2));
+$colOne = $chunks[0];
+$colTwo = $chunks[1];
+$num = 1;
+$num2 = count($colOne) + 1;
+
 ?>
+
 <div id="faq-global">
     <div class="faq-global js">
+
         <div class="faq__wraper--col">
-            <?php if ($faqs) { ?>
-                <?php
-                $counter = 0;
-                foreach ($faqs as $faq) {
-                    if ($counter % 2 === 0) {
-                        echo '<div class="col">';
-                    }
-                ?>
-                    <div class="accordion js">
-                        <h3 class="question h5">
-                            <span><?php echo $num; ?>. <?php echo $faq['pytanie']; ?></span>
-                        </h3>
-                        <div class="answer">
-                            <div>
-                                <?php echo $faq['odpowiedz']; ?>
-                            </div>
+            <?php if ($colOne) { ?>
+            <div class="col">
+                <?php foreach ($colOne as $acc) { ?>
+                <div class="accordion js">
+                    <h3 class="question ">
+                        <span><?php echo $num; ?>. <?php echo $acc['pytanie']; ?></span>
+                    </h3>
+                    <div class="answer">
+                        <div>
+                            <?php echo $acc['odpowiedz']; ?>
                         </div>
                     </div>
-                <?php
-                    if ($counter % 2 === 1) {
-                        echo '</div>'; // Close the column div
-                    }
-                    $counter++;
-                    $num++;
-                }
-                // Close the column div if the number of FAQs is odd
-                if ($counter % 2 === 1) {
-                    echo '</div>';
-                }
-                ?>
+                </div>
+                <?php $num++;
+                    } ?>
+            </div>
+            <?php } ?>
+            <?php if ($colTwo) { ?>
+            <div class="col">
+                <?php foreach ($colTwo as $acc) { ?>
+                <div class="accordion js">
+                    <h3 class="question ">
+                        <span><?php echo $num2; ?>. <?php echo $acc['pytanie']; ?></span>
+                    </h3>
+                    <div class="answer">
+                        <div>
+                            <?php echo $acc['odpowiedz']; ?>
+                        </div>
+                    </div>
+                </div>
+                <?php $num2++;
+                    } ?>
+            </div>
             <?php } ?>
         </div>
     </div>
