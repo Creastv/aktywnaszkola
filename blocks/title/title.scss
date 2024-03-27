@@ -3,6 +3,8 @@
 .bc-title {
   position: relative;
   margin-bottom: 30px;
+  @media #{$sm} {
+  }
   .bc-title__wrap {
     .bc-title__title {
       font-size: 51px !important;
