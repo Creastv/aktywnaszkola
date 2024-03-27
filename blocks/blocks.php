@@ -79,6 +79,24 @@ function register_acf_block_types()
       wp_enqueue_script('go-faq-init', get_template_directory_uri() . '/blocks/faq/faq.js', array('jquery'), '4', true);
     },
   ));
+  acf_register_block_type(array(
+    'name'              => 'faq-global',
+    'title'             => __('FAQ'),
+    'render_template'   => 'blocks/faq-global/faq-global.php',
+    'category'          => 'formatting',
+    'icon' => array(
+      'background' => '#122b4f',
+      'foreground' => '#fff',
+      'src' => 'ellipsis',
+    ),
+    'mode'            => 'preview',
+    'keywords'          => array('faq-global'),
+    'supports' => array('align' => false),
+    'enqueue_assets'    => function () {
+      wp_enqueue_style('go-faq-global',  get_template_directory_uri() . '/blocks/faq-global/faq-global.min.css');
+      wp_enqueue_script('go-faq-global-init', get_template_directory_uri() . '/blocks/faq-global/faq-global.js', array('jquery'), '4', true);
+    },
+  ));
 
   acf_register_block_type(array(
     'name'              => 'title',
