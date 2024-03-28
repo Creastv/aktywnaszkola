@@ -67,7 +67,7 @@ body {
   position: fixed;
   text-align: center;
   z-index: 22;
-  right: 26px;
+  right: 20px;
   bottom: 30px;
   width: 39px;
   height: 39px;
@@ -75,7 +75,7 @@ body {
   transform: translate(0, 100px);
   // padding: 11px;
   transition: all 0.2s linear;
-  background-color: $black;
+  background-color: $main2;
   border: 2px solid #fff;
   @media #{$sm} {
     bottom: 60px;
@@ -154,4 +154,43 @@ body {
 }
 .adk-color {
   color: $main3;
+}
+
+.sticky-socialmedia {
+  position: fixed;
+  z-index: 66;
+  top: 50%;
+  right: 20px;
+  transform: translate(0, -50%);
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      margin: 0;
+      margin-bottom: 10px;
+      a {
+        background-color: #fff;
+        display: block;
+        margin: 0;
+        padding: 2px;
+        border-radius: 100%;
+        transition: all 0.2s linear;
+        svg {
+          display: block;
+          path {
+            fill: $main2;
+            transition: all 0.2s linear;
+          }
+        }
+        &:hover {
+          // background-color: $main !important;
+          box-shadow: 0 0px 10px 0px rgba($main, 0.5);
+          transform: scale(1.1);
+          path {
+            fill: $main3;
+          }
+        }
+      }
+    }
+  }
 }
