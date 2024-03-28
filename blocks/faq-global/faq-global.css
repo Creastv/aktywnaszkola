@@ -160,6 +160,9 @@ body {
   color: #f7931d;
 }
 
+.faq-global {
+  margin-bottom: 50px;
+}
 .faq-global .faq__wraper .col {
   width: 100%;
 }
