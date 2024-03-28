@@ -17,6 +17,12 @@ elseif ($program == 4) :
 endif;
 
 
+$pPage = get_field('p_page');
+if ($pPage != 0 && $pPage != null) {
+    $faqs = array_slice($faqs, 0, $pPage);
+}
+
+
 $chunks = array_chunk($faqs, ceil(count($faqs) / 2));
 $colOne = $chunks[0];
 $colTwo = $chunks[1];
@@ -30,38 +36,38 @@ $num2 = count($colOne) + 1;
 
         <div class="faq__wraper--col">
             <?php if ($colOne) { ?>
-            <div class="col">
-                <?php foreach ($colOne as $acc) { ?>
-                <div class="accordion js">
-                    <h3 class="question ">
-                        <span><?php echo $num; ?>. <?php echo $acc['pytanie']; ?></span>
-                    </h3>
-                    <div class="answer">
-                        <div>
-                            <?php echo $acc['odpowiedz']; ?>
+                <div class="col">
+                    <?php foreach ($colOne as $acc) { ?>
+                        <div class="accordion js">
+                            <h3 class="question ">
+                                <span><?php echo $num; ?>. <?php echo $acc['pytanie']; ?></span>
+                            </h3>
+                            <div class="answer">
+                                <div>
+                                    <?php echo $acc['odpowiedz']; ?>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <?php $num++;
+                    <?php $num++;
                     } ?>
-            </div>
+                </div>
             <?php } ?>
             <?php if ($colTwo) { ?>
-            <div class="col">
-                <?php foreach ($colTwo as $acc) { ?>
-                <div class="accordion js">
-                    <h3 class="question ">
-                        <span><?php echo $num2; ?>. <?php echo $acc['pytanie']; ?></span>
-                    </h3>
-                    <div class="answer">
-                        <div>
-                            <?php echo $acc['odpowiedz']; ?>
+                <div class="col">
+                    <?php foreach ($colTwo as $acc) { ?>
+                        <div class="accordion js">
+                            <h3 class="question ">
+                                <span><?php echo $num2; ?>. <?php echo $acc['pytanie']; ?></span>
+                            </h3>
+                            <div class="answer">
+                                <div>
+                                    <?php echo $acc['odpowiedz']; ?>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <?php $num2++;
+                    <?php $num2++;
                     } ?>
-            </div>
+                </div>
             <?php } ?>
         </div>
     </div>

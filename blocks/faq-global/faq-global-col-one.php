@@ -16,27 +16,34 @@ elseif ($program == 4) :
     $faqs = get_field('faq_str_glowna', 'options');
 endif;
 
+
+$pPage = get_field('p_page');
+if ($pPage != 0 && $pPage != null) {
+    $faqs = array_slice($faqs, 0, $pPage);
+}
+
 $num = '1';
 ?>
 <div id="faq-global">
     <div class="faq-global js">
         <div class="faq__wraper">
             <?php if ($faqs) { ?>
-                <div class="col">
-                    <?php foreach ($faqs as $faq) { ?>
-                        <div class="accordion js">
-                            <h3 class="question h5">
-                                <span><?php echo $num; ?>. <?php echo $faq['pytanie']; ?></span>
-                            </h3>
-                            <div class="answer">
-                                <div>
-                                    <?php echo $faq['odpowiedz']; ?>
-                                </div>
-                            </div>
+            <div class="col">
+                <?php foreach ($faqs as $faq) { ?>
+                <div class="accordion js">
+                    <h3 class="question h5">
+                        <span><?php echo $num; ?>. <?php echo $faq['pytanie']; ?></span>
+                    </h3>
+                    <div class="answer">
+                        <div>
+                            <?php echo $faq['odpowiedz']; ?>
                         </div>
-                    <?php $num++;
-                    } ?>
+                    </div>
                 </div>
+                <?php
+                        $num++;
+                    } ?>
+            </div>
             <?php } ?>
         </div>
     </div>
