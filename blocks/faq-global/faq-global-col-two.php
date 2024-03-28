@@ -36,38 +36,38 @@ $num2 = count($colOne) + 1;
 
         <div class="faq__wraper--col">
             <?php if ($colOne) { ?>
-                <div class="col">
-                    <?php foreach ($colOne as $acc) { ?>
-                        <div class="accordion js">
-                            <h3 class="question ">
-                                <span><?php echo $num; ?>. <?php echo $acc['pytanie']; ?></span>
-                            </h3>
-                            <div class="answer">
-                                <div>
-                                    <?php echo $acc['odpowiedz']; ?>
-                                </div>
-                            </div>
+            <div class="col">
+                <?php foreach ($colOne as $acc) { ?>
+                <div class="accordion js">
+                    <h3 class="question ">
+                        <span><b><?php echo $num; ?>. <?php echo $acc['pytanie']; ?></b></span>
+                    </h3>
+                    <div class="answer">
+                        <div>
+                            <?php echo $acc['odpowiedz']; ?>
                         </div>
-                    <?php $num++;
-                    } ?>
+                    </div>
                 </div>
+                <?php $num++;
+                    } ?>
+            </div>
             <?php } ?>
             <?php if ($colTwo) { ?>
-                <div class="col">
-                    <?php foreach ($colTwo as $acc) { ?>
-                        <div class="accordion js">
-                            <h3 class="question ">
-                                <span><?php echo $num2; ?>. <?php echo $acc['pytanie']; ?></span>
-                            </h3>
-                            <div class="answer">
-                                <div>
-                                    <?php echo $acc['odpowiedz']; ?>
-                                </div>
-                            </div>
+            <div class="col">
+                <?php foreach ($colTwo as $acc) { ?>
+                <div class="accordion js">
+                    <h3 class="question ">
+                        <span><b><?php echo $num2; ?>. <?php echo $acc['pytanie']; ?></b></span>
+                    </h3>
+                    <div class="answer">
+                        <div>
+                            <?php echo $acc['odpowiedz']; ?>
                         </div>
-                    <?php $num2++;
-                    } ?>
+                    </div>
                 </div>
+                <?php $num2++;
+                    } ?>
+            </div>
             <?php } ?>
         </div>
     </div>

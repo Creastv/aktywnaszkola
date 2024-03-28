@@ -28,22 +28,22 @@ $num = '1';
     <div class="faq-global js">
         <div class="faq__wraper">
             <?php if ($faqs) { ?>
-            <div class="col">
-                <?php foreach ($faqs as $faq) { ?>
-                <div class="accordion js">
-                    <h3 class="question h5">
-                        <span><?php echo $num; ?>. <?php echo $faq['pytanie']; ?></span>
-                    </h3>
-                    <div class="answer">
-                        <div>
-                            <?php echo $faq['odpowiedz']; ?>
+                <div class="col">
+                    <?php foreach ($faqs as $faq) { ?>
+                        <div class="accordion js">
+                            <h3 class="question h5">
+                                <span><b><?php echo $num; ?>. <?php echo $faq['pytanie']; ?></b></span>
+                            </h3>
+                            <div class="answer">
+                                <div>
+                                    <?php echo $faq['odpowiedz']; ?>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <?php
+                    <?php
                         $num++;
                     } ?>
-            </div>
+                </div>
             <?php } ?>
         </div>
     </div>
