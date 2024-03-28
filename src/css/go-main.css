@@ -170,7 +170,7 @@ body {
 @media only screen and (max-width: 998px) {
   .container {
     padding-left: 15px;
-    padding-right: 90px;
+    padding-right: 15px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -411,7 +411,9 @@ body {
   margin-bottom: 10px;
 }
 .f_company .desc .con .con__left a {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   text-decoration: none;
   margin-bottom: 10px;
 }

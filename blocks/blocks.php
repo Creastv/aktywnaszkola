@@ -80,6 +80,24 @@ function register_acf_block_types()
     },
   ));
   acf_register_block_type(array(
+    'name'              => 'centerfold',
+    'title'             => __('Rozkładówka'),
+    'render_template'   => 'blocks/centerfold/centerfold.php',
+    'category'          => 'formatting',
+    'icon' => array(
+      'background' => '#122b4f',
+      'foreground' => '#fff',
+      'src' => 'ellipsis',
+    ),
+    'mode'            => 'preview',
+    'keywords'          => array('centerfold'),
+    'supports' => array('align' => false),
+    'enqueue_assets'    => function () {
+      wp_enqueue_style('go-centerfold',  get_template_directory_uri() . '/blocks/centerfold/centerfold.min.css');
+      wp_enqueue_script('go-centerfold-init', get_template_directory_uri() . '/blocks/centerfold/centerfold.js', array('jquery'), '4', true);
+    },
+  ));
+  acf_register_block_type(array(
     'name'              => 'faq-global',
     'title'             => __('FAQ'),
     'render_template'   => 'blocks/faq-global/faq-global.php',

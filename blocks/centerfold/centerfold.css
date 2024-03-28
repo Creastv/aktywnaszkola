@@ -1,0 +1,183 @@
+.bg-title {
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  transform: translate(-50%, 0);
+  z-index: 1;
+  font-size: 11vw;
+  font-size: 12vw;
+  line-height: 0;
+  opacity: 0.051;
+  font-family: "futura-pt-condensed", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  white-space: nowrap;
+}
+
+.centerfold {
+  position: relative;
+  width: 100vw;
+  left: -50vw;
+  margin-left: 50%;
+}
+.centerfold .centerfold_wraper {
+  background-color: #edf8fd;
+  padding-bottom: 30px;
+}
+.centerfold .centerfold-top {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  top: 0;
+}
+.centerfold .centerfold-bottom {
+  width: 100%;
+  z-index: 0;
+  transform: translate(0, -10px);
+}
+.centerfold .centerfold_items {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  min-height: 350px;
+}
+@media only screen and (max-width: 768px) {
+  .centerfold .centerfold_items {
+    min-height: initial;
+    flex-wrap: wrap;
+  }
+}
+.centerfold .centerfold_items .col {
+  position: relative;
+  z-index: 1;
+  width: 33.333%;
+  height: 300px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .centerfold .centerfold_items .col {
+    width: 100%;
+    height: 200px;
+  }
+}
+.centerfold .centerfold_items .col:hover img {
+  width: 110%;
+  height: 110%;
+}
+.centerfold .centerfold_items .col img {
+  transition: all 0.3s ease-in-out;
+  width: 101%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centerfold .centerfold_items .col .item {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: relative;
+}
+.centerfold .centerfold_items .col .item:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  height: 20px;
+  width: 100%;
+}
+.centerfold .centerfold_items .col .item:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5967962185) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.centerfold .centerfold_items .col .item .item-content {
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+  bottom: 15px;
+  left: 20px;
+}
+.centerfold .centerfold_items .col .item .item-content * {
+  color: #fff;
+}
+.centerfold .centerfold_items .col .item .item-content h3 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.centerfold .centerfold_items .col.active {
+  position: relative;
+  z-index: 2;
+  width: 40%;
+  height: 350px;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.4);
+}
+@media only screen and (max-width: 768px) {
+  .centerfold .centerfold_items .col.active {
+    width: 100%;
+    height: 200px;
+  }
+}
+.centerfold .tabcontent {
+  display: none;
+}
+.centerfold .tabcontent.active {
+  display: block;
+}
+.centerfold .centerfold-content {
+  position: relative;
+  z-index: 1;
+  max-width: 769px;
+  width: 100%;
+  margin: 0 auto;
+}
+.centerfold .centerfold-content .centerfold-content__wrap {
+  text-align: center;
+}
+.centerfold .centerfold-content .centerfold-content__wrap h2 {
+  font-size: 51px !important;
+  text-transform: uppercase;
+}
+.centerfold .aw-bg .item:after {
+  background-color: #8bbc4f;
+}
+.centerfold .aw-bg .item h3 {
+  color: #8bbc4f !important;
+}
+.centerfold .aw-bg .centerfold-content h2 {
+  color: #8bbc4f;
+}
+.centerfold .ao-bg .item:after {
+  background-color: #f7931d;
+}
+.centerfold .ao-bg .item h3 {
+  color: #f7931d !important;
+}
+.centerfold .ao-bg .centerfold-content h2 {
+  color: #f7931d;
+}
+.centerfold .adk-bg .item:after {
+  background-color: #36a9e1;
+}
+.centerfold .adk-bg .item h3 {
+  color: #36a9e1 !important;
+}
+.centerfold .adk-bg .centerfold-content h2 {
+  color: #36a9e1;
+}/*# sourceMappingURL=centerfold.css.map */
