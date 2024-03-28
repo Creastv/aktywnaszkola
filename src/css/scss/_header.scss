@@ -264,17 +264,45 @@
     justify-self: center;
     text-align: center;
   }
-
-  img {
-    display: block;
-    max-width: 270px;
+  .navbar__cta__logos {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
     @media #{$sm} {
-      margin: 0 auto;
+      width: 100%;
+    }
+    a {
+      display: block;
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
+  // img {
+  //   display: block;
+  //   max-width: 270px;
+  //   @media #{$sm} {
+  //     margin: 0 auto;
+  //   }
+  // }
   a.btn-main {
     // padding: 20px 30px;
     display: inline-block;
+    @media #{$lg} {
+      align-self: stretch;
+      position: relative;
+      width: 200px;
+      text-align: center;
+      span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+      }
+    }
     @media #{$sm} {
       display: none;
     }

@@ -1,5 +1,12 @@
 <div class="navbar__cta">
-    <img src="<?php echo get_template_directory_uri(); ?>/src/img/logosy.png" alt="Aktywna Szkoła">
+    <div class="navbar__cta__logos">
+        <a href="https://orlysportu.pl/" target="_blank">
+            <img src="<?php echo get_template_directory_uri(); ?>/src/img/orly-logo-header.png" alt="Orły Sportu - Fundacja">
+        </a>
+        <a href="https://www.gov.pl/web/sport" target="_blank">
+            <img src="<?php echo get_template_directory_uri(); ?>/src/img/ministerstwo-sportu-turystyki-logo-header.png" alt="Ministerstwo Sportu i Turystyki">
+        </a>
+    </div>
     <!-- <a href="tel:+48 123 456 789" class="btn-main">Rejestracja</a> -->
-    <a href="#" class="btn-main js-opener-modal">bądź na bieżąco</a>
+    <a href="#" class="btn-main js-opener-modal"><span>bądź na bieżąco</span></a>
 </div>
