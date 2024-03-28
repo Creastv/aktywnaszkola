@@ -6,10 +6,18 @@
     <div class="container">
         <div class="f-info__wrap">
             <div class="left">
-                <p>© 2024 Wszelkie prawa zastrzeżone. Projekt i realizacja <a href="https://roial.pl" target="_blank">roial.pl</a></p>
+                <?php $temp_menu = wp_nav_menu(
+                    array(
+                        'theme_location'  => 'footer_menu',
+                        'menu_id'           => 'footer-nav-list',
+                    )
+                ); ?>
             </div>
             <div class="right">
                 <?php get_template_part('templates-parts/parts/social_media'); ?>
+            </div>
+            <div class="center">
+                <p>© 2024 Wszelkie prawa zastrzeżone. Projekt i realizacja <a href="https://roial.pl" target="_blank">roial.pl</a></p>
             </div>
         </div>
     </div>

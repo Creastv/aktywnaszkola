@@ -9,6 +9,7 @@ if (!function_exists('go_register_nav_menu')) {
 			'primary_menu' => __('Primary Menu', 'go'),
 			'secondary_menu' => __('Secondary menu', 'go'),
 			'blog_menu' => __('Aktualności', 'go'),
+			'footer_menu' => __('Footer', 'go'),
 		));
 	}
 	add_action('after_setup_theme', 'go_register_nav_menu', 0);

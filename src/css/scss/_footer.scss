@@ -98,6 +98,7 @@
   background-color: $main;
   .f-info__wrap {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
@@ -105,7 +106,37 @@
       justify-content: center;
       flex-wrap: wrap;
     }
+    .center {
+      width: 100%;
+      text-align: center;
+      justify-self: center;
+      border-top: 1px solid rgba(#fff, 0.3);
+      margin-top: 20px;
+      padding-top: 20px;
+      @media #{$sm} {
+        order: 3;
+      }
+    }
     .left {
+      #footer-nav-list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        @media #{$sm} {
+          justify-content: center;
+          margin-top: 20px;
+        }
+        li {
+          a {
+            font-size: 12px;
+            padding: 5px;
+            text-decoration: none;
+            &:hover {
+              color: $main2;
+            }
+          }
+        }
+      }
       @media #{$sm} {
         width: 100%;
         order: 2;
