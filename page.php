@@ -10,6 +10,8 @@ while (have_posts()) : the_post(); ?>
         ?>
         <div class="entry-content">
             <div class="container-narrow">
+                <a href="#" class="btn-main js-opener-modal">Sprawdź</a>
+                <?php get_template_part('templates-parts/parts/modal-contact'); ?>
                 <?php the_content(); ?>
             </div>
         </div>

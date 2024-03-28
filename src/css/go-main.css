@@ -781,7 +781,6 @@ body {
   }
 }
 .navbar__cta a.btn-main {
-  padding: 20px 30px;
   display: inline-block;
 }
 @media only screen and (max-width: 768px) {
@@ -858,7 +857,7 @@ body {
 }
 .entry-header .entry-header__wrap .entry-title {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   font-size: 61px;
   text-transform: uppercase;
   color: #fff;
@@ -1345,4 +1344,105 @@ textarea {
   filter: contrast(110%);
   filter: brightness(1.3);
   transform: scale(1.1);
+}
+
+body.modal-active {
+  overflow: hidden;
+}
+
+.m-contact {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  right: 0px;
+  top: -100vh;
+  background: rgba(0, 0, 0, 0);
+  opacity: 0;
+  transition: background ease-in-out 0.5s;
+  overflow: auto;
+}
+.m-contact .m-wraper-contact {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  margin: 0 auto;
+  top: 30px;
+  padding: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .m-contact .m-wraper-contact {
+    top: 10px;
+  }
+}
+.m-contact .m-wraper-contact .box {
+  background-color: #fff;
+  width: 760px;
+  max-width: 100%;
+  text-align: center;
+  padding: 30px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  position: relative;
+  transform: scale(0.2);
+  top: -1400px;
+  transition: all ease-in-out 0.3s;
+}
+@media only screen and (max-width: 768px) {
+  .m-contact .m-wraper-contact .box {
+    padding: 15px;
+  }
+}
+.m-contact .m-wraper-contact .box .close-m {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  color: red;
+  font-size: 31px !important;
+  cursor: pointer;
+}
+.m-contact .m-wraper-contact .box .close-m:hover {
+  color: #36a9e1;
+}
+
+.m-contact.active {
+  opacity: 1;
+  background: rgba(24, 90, 177, 0.665);
+  top: 0;
+}
+.m-contact.active .box {
+  transform: scale(1);
+  top: 0;
+}
+
+.m-active {
+  filter: blur(3px);
+}
+
+.header-title h2 {
+  color: #185ab1;
+}
+.header-title h3 {
+  color: #36a9e1;
+}
+
+.newseletter-form {
+  background-image: url("../img/bg-section2.png");
+  background-position: center;
+  margin-bottom: 50px;
+}
+.newseletter-form .form-wrap {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.newseletter-form .form-wrap label input {
+  padding: 20px;
+}
+.newseletter-form .form-wrap .wpcf7-submit {
+  background-color: #f7931d;
+  max-width: 100%;
+  font-size: 21px;
 }/*# sourceMappingURL=go-main.css.map */

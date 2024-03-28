@@ -1,0 +1,98 @@
+body.modal-active {
+  overflow: hidden;
+}
+.m-contact {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  right: 0px;
+  top: -100vh;
+  background: rgba(0, 0, 0, 0);
+  opacity: 0;
+  transition: background ease-in-out 0.5s;
+  overflow: auto;
+  .m-wraper-contact {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    margin: 0 auto;
+    top: 30px;
+    padding: 20px;
+    @media #{$sm} {
+      top: 10px;
+    }
+    .box {
+      background-color: #fff;
+      width: 760px;
+      max-width: 100%;
+      text-align: center;
+      padding: 30px;
+      margin: 0 auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border-radius: 3px;
+      position: relative;
+      transform: scale(0.2);
+      top: -1400px;
+      transition: all ease-in-out 0.3s;
+      // transition-delay: 0.1s;
+      @media #{$sm} {
+        padding: 15px;
+      }
+      .close-m {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        color: red;
+        font-size: 31px !important;
+        cursor: pointer;
+        &:hover {
+          color: $main2;
+        }
+      }
+    }
+  }
+}
+.m-contact.active {
+  opacity: 1;
+  background: rgba($main, 0.665);
+  top: 0;
+  .box {
+    transform: scale(1);
+    top: 0;
+  }
+}
+
+.m-active {
+  filter: blur(3px);
+}
+.header-title {
+  h2 {
+    color: $main;
+  }
+  h3 {
+    color: $main2;
+  }
+}
+.newseletter-form {
+  background-image: url("../img/bg-section2.png");
+  background-position: center;
+  // background-size: contain;
+  margin-bottom: 50px;
+  .form-wrap {
+    max-width: 400px;
+    margin: 0 auto;
+    label {
+      input {
+        padding: 20px;
+      }
+    }
+    .wpcf7-submit {
+      background-color: $main3;
+      max-width: 100%;
+      font-size: 21px;
+    }
+  }
+}

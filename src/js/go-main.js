@@ -61,23 +61,34 @@ setTimeout(
 }, 1000);
 
 
+// // Modal
 
+const body = document.querySelector("body");
+const header = document.querySelector("#header");
+const main = document.querySelector("main");
+const footer = document.querySelector("#footer");
+const modal = document.querySelector("#contact-modal");
+const modalClose = document.querySelector(".close-m");
 
+const openerModal = document.querySelectorAll(".js-opener-modal");
+for (let i = 0; i < openerModal.length; i++) {
+  openerModal[i].addEventListener("click", openModal);
+}
 
-// if (window.innerWidth < 768) {
-// const cartButton = document.querySelector(".entry-summary__wrap form.cart");
-// if(cartButton !== null){
+modalClose.addEventListener("click", function (event) {
+  if (!event.target.matches(".close-m") || !event.target.matches(".box")) {
+    closeModal();
+  }
+  false;
+});
 
-//     const elSpace = document.querySelector(".product-attributes");
-//     const offsetButton = cartButton.offsetTop;
-//     document.addEventListener("scroll", () => {
-//       if (window.pageYOffset >= offsetButton + 100) {
-//         cartButton.classList.add("active");
-//         elSpace.style.marginBottom = cartButton.clientHeight + 30 + "px";
-//       } else {
-//         cartButton.classList.remove("active");
-//         elSpace.style.marginBottom = "30px";
-//       }
-//     });
-//   }
-// }
+function closeModal() {
+  modal.classList.remove("active");
+
+}
+
+function openModal(e) {
+  e.preventDefault();
+  modal.classList.add("active");
+
+}
