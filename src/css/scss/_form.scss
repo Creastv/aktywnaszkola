@@ -32,6 +32,9 @@ textarea {
   width: 100%;
   max-width: 200px;
   margin-top: 10px;
+  @media #{$sm} {
+    max-width: 100%;
+  }
 }
 .wpcf7-acceptance {
   label {
@@ -39,6 +42,7 @@ textarea {
     display: flex;
     gap: 10px;
     align-items: flex-start;
+
     input {
       width: 20px;
     }

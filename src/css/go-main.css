@@ -1058,6 +1058,11 @@ textarea {
   max-width: 200px;
   margin-top: 10px;
 }
+@media only screen and (max-width: 768px) {
+  .wpcf7-submit {
+    max-width: 100%;
+  }
+}
 
 .wpcf7-acceptance label {
   font-size: 12px;
