@@ -97,7 +97,23 @@ function register_acf_block_types()
       wp_enqueue_script('go-faq-global-init', get_template_directory_uri() . '/blocks/faq-global/faq-global.js', array('jquery'), '4', true);
     },
   ));
-
+  acf_register_block_type(array(
+    'name'              => 'button-link',
+    'title'             => __('Button'),
+    'render_template'   => 'blocks/button/button.php',
+    'category'          => 'formatting',
+    'icon' => array(
+      'background' => '#122b4f',
+      'foreground' => '#fff',
+      'src' => 'ellipsis',
+    ),
+    'mode'            => 'preview',
+    'keywords'          => array('button'),
+    'supports' => array('align' => true),
+    'enqueue_assets'    => function () {
+      wp_enqueue_style('go-button',  get_template_directory_uri() . '/blocks/button/button.min.css');
+    },
+  ));
   acf_register_block_type(array(
     'name'              => 'title',
     'title'             => __('Title'),
