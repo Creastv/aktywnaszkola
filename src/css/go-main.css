@@ -230,7 +230,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   #go-to-top {
-    bottom: 60px;
+    bottom: 20px;
     right: 15px;
   }
 }
@@ -311,6 +311,13 @@ body {
   top: 50%;
   right: 20px;
   transform: translate(0, -50%);
+}
+@media only screen and (max-width: 768px) {
+  .sticky-socialmedia {
+    top: initial;
+    transform: translate(0, 0);
+    bottom: 100px;
+  }
 }
 .sticky-socialmedia ul {
   list-style: none;

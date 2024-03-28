@@ -78,7 +78,7 @@ body {
   background-color: $main2;
   border: 2px solid #fff;
   @media #{$sm} {
-    bottom: 60px;
+    bottom: 20px;
     right: 15px;
   }
   svg {
@@ -162,6 +162,11 @@ body {
   top: 50%;
   right: 20px;
   transform: translate(0, -50%);
+  @media #{$sm} {
+    top: initial;
+    transform: translate(0, 0);
+    bottom: 100px;
+  }
   ul {
     list-style: none;
     padding: 0;
