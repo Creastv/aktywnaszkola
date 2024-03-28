@@ -32,7 +32,7 @@ $num = '1';
                     <?php foreach ($faqs as $faq) { ?>
                         <div class="accordion js">
                             <h3 class="question h5">
-                                <span><b><?php echo $num; ?>. <?php echo $faq['pytanie']; ?></b></span>
+                                <b><?php echo $num; ?>. <?php echo $faq['pytanie']; ?></b><span></span>
                             </h3>
                             <div class="answer">
                                 <div>

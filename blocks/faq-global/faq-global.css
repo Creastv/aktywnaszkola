@@ -58,6 +58,7 @@
   min-height: 75px;
   cursor: pointer;
   transition: all 0.3s;
+  padding: 10px 40px 10px 10px;
 }
 @media only screen and (max-width: 768px) {
   .faq-global .accordion .question {
@@ -66,9 +67,11 @@
   }
 }
 .faq-global .accordion .question span {
-  width: calc(100% - 24px);
+  width: calc(100% - 14px);
   padding: 10px 50px 10px 20px;
-  position: relative;
+  position: absolute;
+  left: 0px;
+  z-index: 2;
 }
 .faq-global .accordion .question span:after {
   content: "+";
