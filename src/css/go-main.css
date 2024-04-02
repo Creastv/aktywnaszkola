@@ -1306,11 +1306,9 @@ textarea {
   justify-content: center;
   align-items: center;
 }
-.cat-nav ul li {
+.cat-nav ul li a {
   color: #185ab1;
   border: 2px solid #185ab1;
-}
-.cat-nav ul li a {
   display: block;
   text-decoration: none;
   padding: 10px 15px;
