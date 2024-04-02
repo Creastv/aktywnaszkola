@@ -62,6 +62,28 @@ function register_acf_block_types()
     },
   ));
   acf_register_block_type(array(
+    'name'              => 'cta-reg',
+    'title'             => __('Zarejestruj się - cta'),
+    'render_template'   => 'blocks/cta-reg/cta-reg.php',
+    'category'          => 'formatting',
+    'icon' => array(
+      'background' => '#122b4f',
+      'foreground' => '#fff',
+      'src' => 'ellipsis',
+    ),
+    'mode'            => 'preview',
+    'keywords'          => array('KV-cta'),
+    'supports'    => [
+      'align'      => false,
+      'anchor'    => false,
+      'customClassName'  => true,
+      'jsx'       => true,
+    ],
+    'enqueue_assets'    => function () {
+      wp_enqueue_style('go-cta-reg',  get_template_directory_uri() . '/blocks/cta-reg/cta-reg.min.css');
+    },
+  ));
+  acf_register_block_type(array(
     'name'              => 'faq',
     'title'             => __('Najczęściej zadawane pytania'),
     'render_template'   => 'blocks/faq/faq.php',
