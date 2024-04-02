@@ -83,7 +83,7 @@ function pagination_bars()
 function new_excerpt_more($more)
 {
 	// return ' <a href="' . get_permalink() . '">' . esc_attr_x('Czytaj więcej ', 'go') . ' ...  </a>';
-	return ' <a href="' . get_permalink() . '"> ...  </a>';
+	return ' <a href="' . get_permalink() . '"> czytaj więcej ...  </a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
