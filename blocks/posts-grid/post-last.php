@@ -1,7 +1,7 @@
 <?php
 $po = array(
     'post_type' => 'post',
-    'posts_per_page' => 4,
+    'posts_per_page' => 3,
     'ignore_sticky_posts' => 1,
 );
 $query_posts_one = new WP_Query($po);

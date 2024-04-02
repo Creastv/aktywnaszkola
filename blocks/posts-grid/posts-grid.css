@@ -75,7 +75,7 @@
   align-items: stretch;
 }
 .posts-grid .posts-grid__wrap--style-one .col {
-  width: calc(25% - 20px) !important;
+  width: calc(33.333% - 20px) !important;
 }
 @media only screen and (max-width: 998px) {
   .posts-grid .posts-grid__wrap--style-one .col {

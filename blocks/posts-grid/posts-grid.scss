@@ -66,7 +66,7 @@
   .posts-grid__wrap--style-one {
     align-items: stretch;
     .col {
-      width: calc(25% - 20px) !important;
+      width: calc(33.333% - 20px) !important;
       @media #{$md} {
         width: calc(50% - 20px) !important;
       }
