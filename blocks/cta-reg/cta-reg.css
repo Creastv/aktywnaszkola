@@ -38,4 +38,7 @@
 .bl-kv .bl-kv__wraper .col img {
   max-width: 100%;
   height: auto;
+}
+.bl-kv .bl-kv__wraper .col .bc-button a {
+  font-size: 21px;
 }/*# sourceMappingURL=cta-reg.css.map */
