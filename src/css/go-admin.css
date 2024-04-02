@@ -938,6 +938,33 @@ body {
   color: #fff;
 }
 
+.btn-aw {
+  border-color: #8bbc4f !important;
+  color: #8bbc4f !important;
+}
+.btn-aw:hover {
+  background-color: #8bbc4f !important;
+  color: #fff !important;
+}
+
+.btn-ao {
+  border-color: #f7931d !important;
+  color: #f7931d !important;
+}
+.btn-ao:hover {
+  background-color: #f7931d !important;
+  color: #fff !important;
+}
+
+.btn-adp {
+  border-color: #36a9e1 !important;
+  color: #36a9e1 !important;
+}
+.btn-adp:hover {
+  background-color: #36a9e1 !important;
+  color: #fff !important;
+}
+
 .wp-block-spacer {
   background-color: #eeeef0 !important;
 }

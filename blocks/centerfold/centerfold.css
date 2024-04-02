@@ -110,7 +110,7 @@
   position: absolute;
   transition: all 0.3s ease-in-out;
   z-index: 2;
-  bottom: 15px;
+  bottom: 30px;
   left: 20px;
 }
 .centerfold .centerfold_items .col .item .item-content * {
@@ -143,7 +143,7 @@
 .centerfold .centerfold-content {
   position: relative;
   z-index: 1;
-  max-width: 769px;
+  max-width: 900px;
   width: 100%;
   margin: 0 auto;
 }

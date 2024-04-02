@@ -28,3 +28,30 @@
     color: #fff;
   }
 }
+
+.btn-aw {
+  border-color: $main1 !important;
+  color: $main1 !important;
+  &:hover {
+    background-color: $main1 !important;
+    color: #fff !important;
+  }
+}
+
+.btn-ao {
+  border-color: $main3 !important;
+  color: $main3 !important;
+  &:hover {
+    background-color: $main3 !important;
+    color: #fff !important;
+  }
+}
+
+.btn-adp {
+  border-color: $main2 !important;
+  color: $main2 !important;
+  &:hover {
+    background-color: $main2 !important;
+    color: #fff !important;
+  }
+}
