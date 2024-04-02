@@ -53,6 +53,7 @@ $adp = get_field('aktywny_do_kwadratu');
                         <?php if ($aw) : ?>
                         <h2><?php echo $aw['tytul']; ?></h2>
                         <?php echo $aw['opis']; ?>
+                        <br>
                         <a href=" <?php echo $aw['link']; ?>" class="btn-rev btn-aw">Dowiedz
                             się
                             więcej</a>
@@ -76,6 +77,7 @@ $adp = get_field('aktywny_do_kwadratu');
                         <?php if ($ao) : ?>
                         <h2><?php echo $ao['tytul']; ?></h2>
                         <?php echo $ao['opis']; ?>
+                        <br>
                         <a href=" <?php echo $ao['link']; ?>" class="btn-rev btn-ao">Dowiedz
                             się
                             więcej</a>
@@ -97,10 +99,11 @@ $adp = get_field('aktywny_do_kwadratu');
             <div id="aktywny-do-kwadratu" class="tabcontent adk-bg">
                 <div class="centerfold-content">
                     <div class="centerfold-content__wrap text-center">
-                        <?php if ($ao) : ?>
-                        <h2><?php echo $ao['tytul']; ?></h2>
-                        <?php echo $ao['opis']; ?>
-                        <a href=" <?php echo $ao['link']; ?>" class="btn-rev btn-adp">Dowiedz
+                        <?php if ($adp) : ?>
+                        <h2><?php echo $adp['tytul']; ?></h2>
+                        <?php echo $adp['opis']; ?>
+                        <br>
+                        <a href=" <?php echo $adp['link']; ?>" class="btn-rev btn-adp">Dowiedz
                             się
                             więcej</a>
                         <?php else : ?>
