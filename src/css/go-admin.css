@@ -193,6 +193,13 @@ body {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .entry-content .container-narrow {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
 .container-full {
   max-width: 1600px;
   margin: 0 auto;
