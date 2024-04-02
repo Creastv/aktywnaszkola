@@ -1,3 +1,8 @@
+<?php
+$aw = get_field('aktywny_wekeend');
+$ao = get_field('aktywny_orlik');
+$adp = get_field('aktywny_do_kwadratu');
+?>
 <div class="centerfold">
     <span class="bg-title">AKTYWNA SZKOŁA</span>
     <div class="centerfold_wraper">
@@ -45,38 +50,73 @@
             <div id="aktywny-wekeend" class="tabcontent aw-bg">
                 <div class="centerfold-content">
                     <div class="centerfold-content__wrap text-center">
+                        <?php if ($aw) : ?>
+                        <h2><?php echo $aw['tytul']; ?></h2>
+                        <?php echo $aw['opis']; ?>
+                        <a href=" <?php echo $aw['link']; ?>" class="btn-rev btn-aw">Dowiedz
+                            się
+                            więcej</a>
+                        <?php else : ?>
                         <h2>Aktywny wekeekend</h2>
-                        <p>Zajęcia sportowe prowadzone na terenie szkolnych obiektów dla dzieci, młodzieży i dorosłych w
-                            soboty i niedziele.
-                        </p>
+                        <p><b>Działania sportowe prowadzone na terenie szkół w soboty i niedziele
+                            </b></p>
+                        <p>Dajemy szansę na aktywność w weekendy! Organizuj zajęcia sportowe na terenie szkolnych
+                            obiektów i wspieraj lokalną społeczność!</p>
+                        <br>
                         <a href="https://www.aktywnaszkola.pl/index.php/aktywny-weekend/" class="btn-rev btn-aw">Dowiedz
                             się
                             więcej</a>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
             <div id="aktywny-orlik" class="tabcontent ao-bg active">
                 <div class="centerfold-content">
                     <div class="centerfold-content__wrap text-center">
+                        <?php if ($ao) : ?>
+                        <h2><?php echo $ao['tytul']; ?></h2>
+                        <?php echo $ao['opis']; ?>
+                        <a href=" <?php echo $ao['link']; ?>" class="btn-rev btn-ao">Dowiedz
+                            się
+                            więcej</a>
+                        <?php else : ?>
                         <h2>Aktywny Orlik</h2>
-                        <p>Zajęcia sportowe organizowane na samorządowych obiektach sportowych dostępne dla każdego 7
-                            dni w tygodniu!
+                        <p><b>Działania aktywizujące prowadzone na samorządowych i szkolnych obiektach sportowych</b>
                         </p>
+                        <p>Aktywizujemy społeczności lokalne! Różnorodne zajęcia sportowe organizowane na samorządowych
+                            i szkolnych obiektach sportowych dostępne dla każdego 7 dni w tygodniu!
+                        </p>
+                        <br>
                         <a href="https://www.aktywnaszkola.pl/index.php/aktywny-orlik/" class="btn-rev btn-ao">Dowiedz
                             się
                             więcej</a>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
             <div id="aktywny-do-kwadratu" class="tabcontent adk-bg">
                 <div class="centerfold-content">
                     <div class="centerfold-content__wrap text-center">
+                        <?php if ($ao) : ?>
+                        <h2><?php echo $ao['tytul']; ?></h2>
+                        <?php echo $ao['opis']; ?>
+                        <a href=" <?php echo $ao['link']; ?>" class="btn-rev btn-adp">Dowiedz
+                            się
+                            więcej</a>
+                        <?php else : ?>
                         <h2>Aktywny do kwadratu</h2>
-                        <p>Pozalekcyjne zajęcia sportowe dla dzieci i młodzieży organizowane w szkołach.
+                        <p><b>Pozalekcyjne zajęcia sportowe dla dzieci i młodzieży organizowane w szkołach</b></p>
+                        <p>Same zajęcia W-F to za mało! W szkołach pojawi się więcej sportu!
+                            Podnosimy aktywność dzieci i młodzieży do kwadratu!
+                            Zajęcia będą się odbywać 3 razy w tygodniu, a dla klas I-III mogą być realizowane 1 raz w
+                            tygodniu.
                         </p>
+                        <p><small><i>(Informacja o naborze w maju)</i></small></p>
+                        <br>
                         <a href="https://www.aktywnaszkola.pl/index.php/aktywny-do-kwadratu/"
                             class="btn-rev btn-adp">Dowiedz
                             się więcej</a>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
