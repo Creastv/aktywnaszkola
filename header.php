@@ -17,24 +17,29 @@
 
 <body <?php body_class(); ?>>
     <header id="header" class="js-header" itemscope itemtype="http://schema.org/WPHeader">
-        <div class="container-full">
-            <div class="navbar js-navbar">
-                <?php get_template_part('templates-parts/header/header', 'brand'); ?>
-                <?php get_template_part('templates-parts/header/header', 'nav'); ?>
-                <?php get_template_part('templates-parts/header/header', 'burger'); ?>
-                <?php get_template_part('templates-parts/header/header', 'cta');
+        <!-- <div class="container-full"> -->
+        <div class="navbar js-navbar">
+
+            <?php get_template_part('templates-parts/header/header', 'brand'); ?>
+            <div class="navbar-wrap">
+                <?php get_template_part('templates-parts/header/header', 'nav-top'); ?>
+                <?php get_template_part('templates-parts/header/header', 'nav');
                 ?>
             </div>
-            <?php // if (!is_singular('post')) : 
+            <?php get_template_part('templates-parts/header/header', 'burger');
             ?>
-            <?php if (is_front_page() && !is_home() || is_singular('post')) : ?>
 
-            <?php else : ?>
-                <?php get_template_part('templates-parts/header/header', 'title');  ?>
-            <?php endif; ?>
-            <?php //endif; 
-            ?>
         </div>
+        <?php // if (!is_singular('post')) : 
+        ?>
+        <?php if (is_front_page() && !is_home() || is_singular('post')) : ?>
+
+        <?php else : ?>
+            <?php get_template_part('templates-parts/header/header', 'title');  ?>
+        <?php endif; ?>
+        <?php //endif; 
+        ?>
+        <!-- </div> -->
 
         <svg class="h-ornament" xmlns="http://www.w3.org/2000/svg" width="1920.451" height="143.068" viewBox="0 0 1920.451 143.068">
             <g id="border" transform="translate(15.306 -619.75)">

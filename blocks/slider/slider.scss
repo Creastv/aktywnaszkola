@@ -52,6 +52,9 @@
           width: 100%;
           text-align: center;
         }
+        @media #{$md} {
+          transform: translate(0, 0);
+        }
         .slider__content_title {
           font-size: 61px;
           @media #{$xlg} {

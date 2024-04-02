@@ -1,12 +1,12 @@
 <nav class="navbar__navigation js-navbar__navigation">
 
     <?php
-	$temp_menu = wp_nav_menu(
-		array(
-			'theme_location'  => 'secondary_menu',
-			'menu_id' 	      => 'programy-nav-list',
-		)
-	);
+	// $temp_menu = wp_nav_menu(
+	// 	array(
+	// 		'theme_location'  => 'secondary_menu',
+	// 		'menu_id' 	      => 'programy-nav-list',
+	// 	)
+	// );
 	// if ( wp_is_mobile() ) : 
 	// $navLocation = 'mobile_menu';
 	// else : 

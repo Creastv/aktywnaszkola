@@ -56,6 +56,11 @@
     text-align: center;
   }
 }
+@media only screen and (max-width: 998px) {
+  .home-slider .swiper-slide .slide .slide__content {
+    transform: translate(0, 0);
+  }
+}
 .home-slider .swiper-slide .slide .slide__content .slider__content_title {
   font-size: 61px;
 }
