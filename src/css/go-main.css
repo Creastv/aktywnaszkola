@@ -1306,46 +1306,54 @@ textarea {
   justify-content: center;
   align-items: center;
 }
+.cat-nav ul li {
+  color: #185ab1;
+  border: 2px solid #185ab1;
+}
 .cat-nav ul li a {
   display: block;
   text-decoration: none;
   padding: 10px 15px;
 }
+.cat-nav ul li a:hover {
+  background-color: #185ab1;
+  color: #fff;
+}
 .cat-nav ul .aw-color a {
-  color: #8bbc4f;
-  border: 2px solid #8bbc4f;
+  color: #8bbc4f !important;
+  border: 2px solid #8bbc4f !important;
 }
 .cat-nav ul .aw-color a:hover {
-  background-color: #8bbc4f;
-  color: #fff;
+  background-color: #8bbc4f !important;
+  color: #fff !important;
 }
 .cat-nav ul .current_page_item.aw-color a {
-  background-color: #8bbc4f;
-  color: #fff;
+  background-color: #8bbc4f !important;
+  color: #fff !important;
 }
 .cat-nav ul .ao-color a {
-  color: #36a9e1;
-  border: 2px solid #36a9e1;
+  color: #36a9e1 !important;
+  border: 2px solid #36a9e1 !important;
 }
 .cat-nav ul .ao-color a:hover {
-  background-color: #36a9e1;
-  color: #fff;
+  background-color: #36a9e1 !important;
+  color: #fff !important;
 }
 .cat-nav ul .current_page_item.ao-color a {
-  background-color: #36a9e1;
-  color: #fff;
+  background-color: #36a9e1 !important;
+  color: #fff !important;
 }
 .cat-nav ul .adk-color a {
-  color: #f7931d;
-  border: 2px solid #f7931d;
+  color: #f7931d !important;
+  border: 2px solid #f7931d !important;
 }
 .cat-nav ul .adk-color a:hover {
-  background-color: #f7931d;
-  color: #fff;
+  background-color: #f7931d !important;
+  color: #fff !important;
 }
 .cat-nav ul .current_page_item.adk-color a {
-  background-color: #f7931d;
-  color: #fff;
+  background-color: #f7931d !important;
+  color: #fff !important;
 }
 
 .card-post {

@@ -37,59 +37,65 @@
     justify-content: center;
     align-items: center;
     li {
+      color: $main;
+      border: 2px solid $main;
       a {
         display: block;
         text-decoration: none;
         padding: 10px 15px;
+        &:hover {
+          background-color: $main;
+          color: #fff;
+        }
       }
     }
     .aw-color {
       a {
-        color: $main1;
-        border: 2px solid $main1;
+        color: $main1 !important;
+        border: 2px solid $main1 !important;
         &:hover {
-          background-color: $main1;
-          color: #fff;
+          background-color: $main1 !important;
+          color: #fff !important;
         }
       }
     }
 
     .current_page_item.aw-color {
       a {
-        background-color: $main1;
-        color: #fff;
+        background-color: $main1 !important;
+        color: #fff !important;
       }
     }
     .ao-color {
       a {
-        color: $main2;
-        border: 2px solid $main2;
+        color: $main2 !important;
+        border: 2px solid $main2 !important;
         &:hover {
-          background-color: $main2;
-          color: #fff;
+          background-color: $main2 !important;
+          color: #fff !important;
         }
       }
     }
     .current_page_item.ao-color {
       a {
-        background-color: $main2;
-        color: #fff;
+        background-color: $main2 !important;
+        color: #fff !important;
       }
     }
     .adk-color {
       a {
-        color: $main3;
-        border: 2px solid $main3;
+        color: $main3 !important;
+        border: 2px solid $main3 !important;
         &:hover {
-          background-color: $main3;
-          color: #fff;
+          background-color: $main3 !important;
+          color: #fff !important;
         }
       }
     }
     .current_page_item.adk-color {
       a {
-        background-color: $main3;
-        color: #fff;
+        background-color: $main3 !important;
+        color: #fff !important;
       }
     }
   }
