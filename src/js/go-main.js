@@ -92,3 +92,5 @@ function openModal(e) {
   modal.classList.add("active");
 
 }
+
+

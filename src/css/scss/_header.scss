@@ -129,8 +129,9 @@
         a {
           background-color: $main3;
           border: 2px solid $main3;
-          padding: 15px 40px;
-          font-size: 18px;
+          padding: 10px 20px;
+          font-size: 16px;
+          white-space: nowrap;
           @media #{$lg} {
             padding: 10px 20px;
           }
