@@ -43,8 +43,8 @@
     .question {
       font-family: "Lato", sans-serif !important;
       font-weight: 400 !important;
-      font-size: 18px;
-      line-height: 26px;
+      font-size: 1.125em;
+      line-height: 1.6em;
       position: relative;
       display: flex;
       align-items: center;
@@ -56,8 +56,8 @@
       transition: all 0.3s;
       padding: 10px 40px 10px 10px;
       @media #{$sm} {
-        font-size: 16px;
-        line-height: 26px;
+        font-size: 1em;
+        line-height: 1.625em;
       }
       span {
         width: calc(100% - 14px);
@@ -72,8 +72,8 @@
           transform: translate(0, -50%);
           right: 15px;
           display: block;
-          font-size: 24px !important;
-          color: $black;
+          font-size: 1.5em;
+          color: var(--black);
         }
       }
       svg {
@@ -105,7 +105,7 @@
   .accordion.active {
     background-color: #f6f6f6;
     // background-color: rgba(259, 259, 259, 1);
-    border: 2px solid $main;
+    border: 2px solid var(--main);
     margin-top: 0px;
     position: relative;
     z-index: 2;
@@ -134,5 +134,16 @@
       -webkit-columns: 2;
       -moz-columns: 2;
     }
+  }
+}
+
+.hight-contrast {
+  .faq .accordion {
+    border-color: var(--black);
+    border-top: 2px solid var(--black);
+    border-bottom: 2px solid var(--black);
+  }
+  .accordion.active {
+    background-color: var(--white);
   }
 }

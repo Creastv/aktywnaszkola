@@ -10,9 +10,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #ffff;
+  background-color: var(--white);
   overflow-x: hidden;
-  // padding-top: 188px;
 }
 
 .container {
@@ -83,8 +82,8 @@ body {
   transform: translate(0, 100px);
   // padding: 11px;
   transition: all 0.2s linear;
-  background-color: $main2;
-  border: 2px solid #fff;
+  background-color: var(--main2);
+  border: 2px solid var(--white);
   @media #{$sm} {
     bottom: 20px;
     right: 15px;
@@ -92,11 +91,11 @@ body {
   svg {
     margin-top: 5px;
     path {
-      fill: #fff;
+      fill: var(--white);
     }
   }
   &:hover {
-    background-color: $main;
+    background-color: var(--main);
     transform: translate(0, 100px), scale(1.1);
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
   }
@@ -118,12 +117,12 @@ body {
     padding: 5px 1px;
     text-decoration: none;
     &:hover {
-      color: $main2;
+      color: var(--main2);
     }
   }
   span.current {
-    background-color: $black;
-    color: #ffff;
+    background-color: var(--black);
+    color: var(--white) f;
     padding: 5px 5px;
     border-radius: 3px;
   }
@@ -140,7 +139,7 @@ body {
 
     span {
       &:last-child {
-        color: $black;
+        color: var(--black);
         font-size: 1em;
         display: inline-block;
         max-width: 250px;
@@ -155,13 +154,13 @@ body {
 }
 
 .aw-color {
-  color: $main1;
+  color: var(--main1);
 }
 .ao-color {
-  color: $main2;
+  color: var(--main2);
 }
 .adk-color {
-  color: $main3;
+  color: var(--var(--main) 3);
 }
 
 .sticky-socialmedia {
@@ -182,7 +181,7 @@ body {
       margin: 0;
       margin-bottom: 10px;
       a {
-        background-color: #fff;
+        background-color: var(--white);
         display: block;
         margin: 0;
         padding: 2px;
@@ -191,19 +190,24 @@ body {
         svg {
           display: block;
           path {
-            fill: $main2;
+            fill: var(--main2);
             transition: all 0.2s linear;
           }
         }
         &:hover {
-          // background-color: $main !important;
-          box-shadow: 0 0px 10px 0px rgba($main, 0.5);
+          // background-color: var(--main) !important;
+          box-shadow: 0 0px 10px 0px rgba(var(--main), 0.5);
           transform: scale(1.1);
           path {
-            fill: $main3;
+            fill: var(--var(--main) 3);
           }
         }
       }
     }
   }
+}
+
+// Accessibility
+.text-large {
+  font-size: 125%;
 }

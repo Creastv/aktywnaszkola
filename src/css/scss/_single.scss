@@ -6,7 +6,7 @@
   font-size: 0.8em;
   margin-bottom: 20px;
   margin-bottom: 30px;
-  color: $black;
+  color: var(--black);
 }
 body.single {
   .entry-header {
@@ -19,10 +19,10 @@ body.single {
       display: none !important;
     }
     h1 {
-      color: $black !important;
+      color: var(--black) !important;
       font-size: 2.4em;
       @media #{$sm} {
-        font-size: 28px;
+        font-size: 1.75em;
       }
     }
     .rank-math-breadcrumb {
@@ -33,7 +33,7 @@ body.single {
         justify-content: center !important;
       }
       a {
-        color: $main2;
+        color: var(--main2);
       }
       span {
         color: black !important;
@@ -70,7 +70,7 @@ body.single {
       height: auto;
     }
     a {
-      color: $main;
+      color: var(--main);
     }
   }
 }
@@ -78,8 +78,8 @@ body.single {
 // bio
 #author-bio {
   padding: 20px 20px;
-  border-top: 1px solid $main2;
-  border-bottom: 1px solid $main2;
+  border-top: 1px solid var(--main2);
+  border-bottom: 1px solid var(--main2);
   display: flex;
   gap: 10px;
   margin-bottom: 50px;
@@ -113,8 +113,8 @@ body.single {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid $main2;
-  border-bottom: 1px solid $main2;
+  border-top: 1px solid var(--main2);
+  border-bottom: 1px solid var(--main2);
   text-align: center;
 
   margin-bottom: 30px;

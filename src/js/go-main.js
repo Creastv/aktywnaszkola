@@ -94,3 +94,51 @@ function openModal(e) {
 }
 
 
+// Accessibility
+
+const acsSlider = document.querySelector(".go-accessibility");
+const togglerSlider = document.querySelector(".go-acs-toggler");
+let flagSlider = false;
+togglerSlider.addEventListener("click", () => {
+  if (flagSlider == false) {
+    acsSlider.classList.add("active");
+    flagSlider = true;
+  } else {
+    acsSlider.classList.remove("active");
+    flagSlider = false;
+  }
+});
+
+const togglerTextSizeLarge = document.querySelector(".font-increase");
+const togglerTextSizeSmall = document.querySelector(".font-decrease");
+const togglerContrast = document.querySelector(".toggler-hight-contrast");
+togglerTextSizeSmall.classList.add("inactive");
+// body.classList.add("hight-contrast");
+
+togglerTextSizeLarge.addEventListener("click", () => {
+  body.classList.add("text-large");
+  togglerTextSizeLarge.classList.add("inactive");
+  togglerTextSizeSmall.classList.remove("inactive");
+});
+
+togglerTextSizeSmall.addEventListener("click", () => {
+  body.classList.remove("text-large");
+  togglerTextSizeLarge.classList.remove("inactive");
+  togglerTextSizeSmall.classList.add("inactive");
+});
+
+togglerContrast.addEventListener("click", () => {
+  if (body.classList.contains("hight-contrast")) {
+    body.classList.remove("hight-contrast");
+  } else {
+    body.classList.add("hight-contrast");
+  }
+});
+
+document.addEventListener("scroll", () => {
+  if (window.pageYOffset >= 200) {
+    acsSlider.classList.add("top");
+  } else {
+    acsSlider.classList.remove("top");
+  }
+});

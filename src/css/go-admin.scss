@@ -21,12 +21,12 @@
   &:before {
     content: "Anchor point";
     position: absolute;
-    color: $main;
-    background-color: $main;
+    color: var(--main);
+    background-color: var(--main);
     border-radius: 6px;
     padding: 5px 10px;
     font-size: 14px;
-    color: #fff;
+    color: var(--main);
   }
 }
 .bip-archive {
@@ -41,12 +41,12 @@
   &:before {
     content: "Archiwum";
     position: absolute;
-    color: $main;
-    background-color: $main;
+    color: var(--main);
+    background-color: var(--main);
     border-radius: 6px;
     padding: 5px 10px;
     font-size: 14px;
-    color: #fff;
+    color: var(--main);
   }
   .bip-archive-content {
     height: auto !important;
@@ -189,12 +189,12 @@ html :where(.wp-block)[data-align="right"] {
       position: absolute;
       left: 10px;
       top: 10px;
-      color: $main;
-      background-color: $main;
+      color: var(--main);
+      background-color: var(--main);
       border-radius: 6px;
       padding: 5px 10px;
       font-size: 14px;
-      color: #fff;
+      color: var(--main);
     }
   }
 }

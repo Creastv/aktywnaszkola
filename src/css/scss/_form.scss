@@ -11,7 +11,7 @@ select {
   width: 100%;
   padding: 10px;
   border-radius: 0px;
-  border: 1px solid $main2;
+  border: 1px solid var(--main2);
   margin: 5px 0;
 }
 textarea {
@@ -19,11 +19,11 @@ textarea {
   width: 100%;
   padding: 10px;
   border-radius: 0px;
-  border: 1px solid $main2;
+  border: 1px solid var(--main2);
   margin: 5px 0;
 }
 .wpcf7-submit {
-  background-color: $main2;
+  background-color: var(--main2);
   color: white;
   padding: 10px;
   border: none;

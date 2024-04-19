@@ -1,8 +1,8 @@
 .btn-main {
   padding: 10px 20px;
-  background-color: $main3;
-  border: 2px solid $main3 !important;
-  color: #fff;
+  background-color: var(--main3);
+  border: 2px solid var(--main3) !important;
+  color: var(--white);
   border: none;
   border-radius: 0px;
   text-transform: uppercase;
@@ -10,48 +10,48 @@
   display: inline-block;
   &:hover {
     background: none;
-    color: $main3;
+    color: var(--main3);
   }
 }
 
 .btn-rev {
   padding: 10px 20px;
-  border: 2px solid $main3 !important;
-  color: $main3;
+  border: 2px solid var(--main3) !important;
+  color: var(--main3);
   border: none;
   border-radius: 0px;
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
   &:hover {
-    background-color: $main3;
-    color: #fff;
+    background-color: var(--main3);
+    color: var(--white);
   }
 }
 
 .btn-aw {
-  border-color: $main1 !important;
-  color: $main1 !important;
+  border-color: var(--main1) !important;
+  color: var(--main1) !important;
   &:hover {
-    background-color: $main1 !important;
-    color: #fff !important;
+    background-color: var(--main1) !important;
+    color: var(--white) !important;
   }
 }
 
 .btn-ao {
-  border-color: $main3 !important;
-  color: $main3 !important;
+  border-color: var(--main3) !important;
+  color: var(--main3) !important;
   &:hover {
-    background-color: $main3 !important;
-    color: #fff !important;
+    background-color: var(--main3) !important;
+    color: var(--white) !important;
   }
 }
 
 .btn-adp {
-  border-color: $main2 !important;
-  color: $main2 !important;
+  border-color: var(--main2) !important;
+  color: var(--main2) !important;
   &:hover {
-    background-color: $main2 !important;
-    color: #fff !important;
+    background-color: var(--main2) !important;
+    color: var(--white) !important;
   }
 }

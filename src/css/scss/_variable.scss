@@ -18,3 +18,29 @@ $black2: #2b2b2b;
 $light-black: #5e5a52;
 $gray: #b2b9c5;
 $light: #f7f7f5;
+
+:root {
+  --main: #185ab1;
+  --main1: #8bbc4f;
+  --main2: #36a9e1;
+  --main3: #f7931d;
+
+  --black: #091a31;
+  --black2: #2b2b2b;
+  --light-black: #5e5a52;
+  --gray: #b2b9c5;
+  --light: #f7f7f5;
+  --white: #fff;
+}
+
+.hight-contrast {
+  --main: #ffeb87;
+  --main: #ffeb87;
+  --main1: #ffeb87;
+  --main2: #ffeb87;
+  --main3: #ffeb87;
+  --black: #ffeb87;
+  --black2: #fff;
+  --light-black: #ffeb87;
+  --white: #212529;
+}

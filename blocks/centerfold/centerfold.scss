@@ -95,7 +95,7 @@
           bottom: 0;
           height: 20px;
           width: 100%;
-          // background-color: $main;
+          // background-color: var(--main)
         }
         &:before {
           content: "";
@@ -167,7 +167,8 @@
     .centerfold-content__wrap {
       text-align: center;
       h2 {
-        font-size: 51px !important;
+        // font-size: 51px !important;
+        font-size: 3em;
         text-transform: uppercase;
       }
     }
@@ -176,46 +177,57 @@
   .aw-bg {
     .item {
       &:after {
-        background-color: $main1;
+        background-color: var(--main1);
       }
       h3 {
-        color: $main1 !important;
+        color: var(--main1) !important;
       }
     }
     .centerfold-content {
       h2 {
-        color: $main1;
+        color: var(--main1);
       }
     }
   }
   .ao-bg {
     .item {
       &:after {
-        background-color: $main3;
+        background-color: var(--main3);
       }
       h3 {
-        color: $main3 !important;
+        color: var(--main3) !important;
       }
     }
     .centerfold-content {
       h2 {
-        color: $main3;
+        color: var(--main3);
       }
     }
   }
   .adk-bg {
     .item {
       &:after {
-        background-color: $main2;
+        background-color: var(--main2);
       }
       h3 {
-        color: $main2 !important;
+        color: var(--main2) !important;
       }
     }
     .centerfold-content {
       h2 {
-        color: $main2;
+        color: var(--main2);
       }
+    }
+  }
+}
+
+.hight-contrast {
+  .centerfold {
+    .centerfold_wraper {
+      background: none;
+    }
+    svg {
+      display: none;
     }
   }
 }

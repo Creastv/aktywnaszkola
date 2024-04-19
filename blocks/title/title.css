@@ -1,14 +1,39 @@
+:root {
+  --main: #185ab1;
+  --main1: #8bbc4f;
+  --main2: #36a9e1;
+  --main3: #f7931d;
+  --black: #091a31;
+  --black2: #2b2b2b;
+  --light-black: #5e5a52;
+  --gray: #b2b9c5;
+  --light: #f7f7f5;
+  --white: #fff;
+}
+
+.hight-contrast {
+  --main: #ffeb87;
+  --main: #ffeb87;
+  --main1: #ffeb87;
+  --main2: #ffeb87;
+  --main3: #ffeb87;
+  --black: #ffeb87;
+  --black2: #fff;
+  --light-black: #ffeb87;
+  --white: #212529;
+}
+
 .bc-title {
   position: relative;
   margin-bottom: 30px;
 }
 .bc-title .bc-title__wrap .bc-title__title {
-  font-size: 51px !important;
+  font-size: 3em;
   text-transform: uppercase;
 }
 @media only screen and (max-width: 768px) {
   .bc-title .bc-title__wrap .bc-title__title {
-    font-size: 31px !important;
+    font-size: 2em;
   }
 }
 .bc-title .bc-title__wrap .bc-title-border {
@@ -22,7 +47,7 @@
   display: block;
   -webkit-clip-path: polygon(5% 83%, 100% 81%, 96% 100%, 0% 100%);
           clip-path: polygon(5% 83%, 100% 81%, 96% 100%, 0% 100%);
-  background-color: #36a9e1;
+  background-color: var(--main2);
   width: 110%;
   height: 100px;
   bottom: 5px;

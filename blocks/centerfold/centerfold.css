@@ -1,3 +1,28 @@
+:root {
+  --main: #185ab1;
+  --main1: #8bbc4f;
+  --main2: #36a9e1;
+  --main3: #f7931d;
+  --black: #091a31;
+  --black2: #2b2b2b;
+  --light-black: #5e5a52;
+  --gray: #b2b9c5;
+  --light: #f7f7f5;
+  --white: #fff;
+}
+
+.hight-contrast {
+  --main: #ffeb87;
+  --main: #ffeb87;
+  --main1: #ffeb87;
+  --main2: #ffeb87;
+  --main3: #ffeb87;
+  --black: #ffeb87;
+  --black2: #fff;
+  --light-black: #ffeb87;
+  --white: #212529;
+}
+
 .bg-title {
   position: absolute;
   left: 50%;
@@ -151,33 +176,40 @@
   text-align: center;
 }
 .centerfold .centerfold-content .centerfold-content__wrap h2 {
-  font-size: 51px !important;
+  font-size: 3em;
   text-transform: uppercase;
 }
 .centerfold .aw-bg .item:after {
-  background-color: #8bbc4f;
+  background-color: var(--main1);
 }
 .centerfold .aw-bg .item h3 {
-  color: #8bbc4f !important;
+  color: var(--main1) !important;
 }
 .centerfold .aw-bg .centerfold-content h2 {
-  color: #8bbc4f;
+  color: var(--main1);
 }
 .centerfold .ao-bg .item:after {
-  background-color: #f7931d;
+  background-color: var(--main3);
 }
 .centerfold .ao-bg .item h3 {
-  color: #f7931d !important;
+  color: var(--main3) !important;
 }
 .centerfold .ao-bg .centerfold-content h2 {
-  color: #f7931d;
+  color: var(--main3);
 }
 .centerfold .adk-bg .item:after {
-  background-color: #36a9e1;
+  background-color: var(--main2);
 }
 .centerfold .adk-bg .item h3 {
-  color: #36a9e1 !important;
+  color: var(--main2) !important;
 }
 .centerfold .adk-bg .centerfold-content h2 {
-  color: #36a9e1;
+  color: var(--main2);
+}
+
+.hight-contrast .centerfold .centerfold_wraper {
+  background: none;
+}
+.hight-contrast .centerfold svg {
+  display: none;
 }/*# sourceMappingURL=centerfold.css.map */

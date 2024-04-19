@@ -10,13 +10,13 @@
     .entry-title {
       position: relative;
       z-index: 1;
-      font-size: 61px;
+      font-size: 3.8em;
       text-transform: uppercase;
-      color: #fff;
+      color: var(--white);
       padding: 0 20px;
       // margin: 0;
       @media #{$sm} {
-        font-size: 36px;
+        font-size: 2.25em;
       }
     }
     &:before {
@@ -26,7 +26,7 @@
       z-index: 0;
       display: block;
       clip-path: polygon(5% 83%, 100% 81%, 96% 100%, 0% 100%);
-      background-color: $main2;
+      background-color: vat(--main2);
       width: 100%;
       max-width: 200px;
       height: 120px;
@@ -44,10 +44,10 @@
       text-align: center !important;
     }
     a {
-      color: $main2;
+      color: vat(--main2);
     }
     span {
-      color: #fff !important;
+      color: var(--white) !important;
     }
   }
 }
