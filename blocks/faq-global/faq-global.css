@@ -162,10 +162,8 @@
   }
 }
 
-.hight-contrast .faq .accordion {
+.hight-contrast .faq-global .accordion {
   border-color: var(--black);
-  border-top: 2px solid var(--black);
-  border-bottom: 2px solid var(--black);
 }
 .hight-contrast .accordion.active {
   background-color: var(--white);

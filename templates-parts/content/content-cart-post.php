@@ -7,17 +7,19 @@ $term_id = wp_get_post_terms($post->ID, 'category', array("fields" => "ids"));
     <header class="cat-<?php echo $term_id[0]; ?>">
         <a href="<?php the_permalink(); ?>">
             <?php if (has_post_thumbnail($post->ID)) : ?>
-                <?php the_post_thumbnail('post-futured', array('alt' => get_the_title())); ?>
+            <?php the_post_thumbnail('post-futured', array('alt' => get_the_title())); ?>
             <?php else : ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/src/img/thumbnail.png" alt="<?php the_title(); ?> ">
+            <img src="<?php echo get_template_directory_uri(); ?>/src/img/thumbnail.png" alt="<?php the_title(); ?> ">
             <?php endif; ?>
             <div class="entry-date"><span><?php echo get_the_date('j M', get_the_ID()); ?></span></div>
             <svg xmlns="http://www.w3.org/2000/svg" width="480.684" height="73.125" viewBox="0 0 480.684 73.125">
-                <g id="border" transform="translate(12.684 -466)">
-                    <path id="Forma_1" data-name="Forma 1" d="M331,538.125,809.684,465v73.125Z" transform="translate(-341.684 1)" fill="#fff" opacity="0.738" />
+                <g class="border" transform="translate(12.684 -466)">
+                    <path data-name="Forma 1" d="M331,538.125,809.684,465v73.125Z" transform="translate(-341.684 1)"
+                        fill="#fff" opacity="0.738" />
                 </g>
-                <g id="border-2" data-name="border" transform="translate(10.684 -466)" opacity="0.7">
-                    <path id="Forma_1-2" data-name="Forma 1" d="M809.311,538.125,331,465v73.125Z" transform="translate(-341.684 1)" fill="#fff" opacity="0.968" />
+                <g class="border-2" data-name="border" transform="translate(10.684 -466)" opacity="0.7">
+                    <path data-name="Forma 1" d="M809.311,538.125,331,465v73.125Z" transform="translate(-341.684 1)"
+                        fill="#fff" opacity="0.968" />
                 </g>
             </svg>
         </a>

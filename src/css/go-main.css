@@ -309,8 +309,8 @@ body {
   color: var(--main2);
 }
 .go-pagination span.current {
-  background-color: var(--black);
-  color: var(--white) f;
+  background-color: var(--main2);
+  color: var(--white);
   padding: 5px 5px;
   border-radius: 3px;
 }
@@ -1146,7 +1146,7 @@ body.single .entry-header .rank-math-breadcrumb a {
   color: var(--main2);
 }
 body.single .entry-header .rank-math-breadcrumb span {
-  color: black !important;
+  color: var(--black) !important;
 }
 body.single .entry-header .meta-pub {
   display: flex;
@@ -1571,6 +1571,10 @@ textarea {
 .hight-contrast .card-post .entry-term span {
   color: var(--white);
 }
+.hight-contrast .card-post path {
+  fill: var(--black);
+  opacity: 0.3;
+}
 
 body.modal-active {
   overflow: hidden;
@@ -1675,7 +1679,7 @@ body.modal-active {
 
 .go-accessibility {
   position: fixed;
-  z-index: 99999;
+  z-index: 999;
   top: 180px;
   right: 0px;
   transform: translate(200px, 0);
@@ -1727,6 +1731,7 @@ body.modal-active {
   gap: 10px;
   cursor: pointer;
   transition: all 0.3s linear;
+  font-size: 0.8em;
 }
 .go-accessibility .go-asc-slider ul li button svg {
   display: block;
@@ -1764,6 +1769,17 @@ body.modal-active {
   opacity: 0.5;
 }
 
+.hight-contrast .rank-math-breadcrumb span {
+  color: var(--black) !important;
+}
+.hight-contrast .logotypy {
+  background-color: var(--black);
+  padding: 10px;
+}
+.hight-contrast .logotypy p {
+  color: var(--white);
+  font-size: 1em;
+}
 .hight-contrast .navbar__cta__logos {
   background-color: var(--black);
 }

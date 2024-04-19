@@ -309,8 +309,8 @@ body {
   color: var(--main2);
 }
 .go-pagination span.current {
-  background-color: var(--black);
-  color: var(--white) f;
+  background-color: var(--main2);
+  color: var(--white);
   padding: 5px 5px;
   border-radius: 3px;
 }

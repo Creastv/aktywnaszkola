@@ -138,10 +138,8 @@
 }
 
 .hight-contrast {
-  .faq .accordion {
+  .faq-global .accordion {
     border-color: var(--black);
-    border-top: 2px solid var(--black);
-    border-bottom: 2px solid var(--black);
   }
   .accordion.active {
     background-color: var(--white);

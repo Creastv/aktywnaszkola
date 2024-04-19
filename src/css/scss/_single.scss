@@ -36,7 +36,7 @@ body.single {
         color: var(--main2);
       }
       span {
-        color: black !important;
+        color: var(--black) !important;
       }
     }
     .meta-pub {
