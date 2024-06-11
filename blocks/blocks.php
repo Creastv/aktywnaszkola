@@ -45,6 +45,30 @@ function register_acf_block_types()
   ));
 
   acf_register_block_type(array(
+    'name'              => 'map',
+    'title'             => __('Mapa'),
+    'render_template'   => 'blocks/map/map.php',
+    'category'          => 'formatting',
+    'icon' => array(
+      'background' => '#122b4f',
+      'foreground' => '#fff',
+      'src' => 'ellipsis',
+    ),
+    'mode'            => 'preview',
+    'keywords'          => array('map'),
+    'supports'    => [
+      'align'      => false,
+      'anchor'    => false,
+      'customClassName'  => true,
+      'jsx'       => true,
+    ],
+    'enqueue_assets'    => function () {
+      wp_enqueue_style('go-map',  get_template_directory_uri() . '/blocks/map/map.min.css');
+      // wp_enqueue_script('go-map-markerclusterer', 'https://cdnjs.cloudflare.com/ajax/libs/js-marker-clusterer/1.0.0/markerclusterer.js', array(), '20130459', true);
+    },
+  ));
+
+  acf_register_block_type(array(
     'name'              => 'posts-grid',
     'title'             => __('Posty - grid'),
     'render_template'   => 'blocks/posts-grid/posts-grid.php',
